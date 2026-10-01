@@ -3,80 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transforma Tu Vida | E-book Oficial de Silvio Álvarez</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Transmuta Tu Vida - Silvio Álvarez</title>
+    <style>
+        :root {
+            --primary-color: #1b4332;
+            --secondary-color: #2d6a4f;
+            --accent-color: #d4af37;
+            --whatsapp-color: #25d366;
+            --bg-color: #f8f9fa;
+            --text-color: #2b2b2b;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px 15px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 30px 20px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .badge {
+            background-color: #e8f5e9;
+            color: var(--primary-color);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #555;
+            font-style: italic;
+        }
+
+        .author {
+            margin-top: 8px;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+
+        .price-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+
+        .price-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .price-value {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin: 5px 0;
+        }
+
+        .price-desc {
+            font-size: 0.85rem;
+            opacity: 0.85;
+        }
+
+        .btn-whatsapp {
+            display: block;
+            width: 100%;
+            background-color: var(--whatsapp-color);
+            color: white;
+            text-align: center;
+            padding: 16px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1eb855;
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 6px;
+            margin: 30px 0 15px 0;
+        }
+
+        ul.features {
+            list-style: none;
+        }
+
+        ul.features li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        ul.features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .chapter-card {
+            background: #f1f8f5;
+            border-left: 4px solid var(--secondary-color);
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .chapter-title {
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 0.95rem;
+        }
+
+        .chapter-desc {
+            font-size: 0.85rem;
+            color: #444;
+            margin-top: 3px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">📖 Silvio Álvarez | Libros</div>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#ebook">El Libro</a>
-            <a href="#autor">Sobre el Autor</a>
-        </nav>
+<div class="container">
+    <header>
+        <span class="badge">E-book Digital (PDF)</span>
+        <h1>TRANSMUTA TU VIDA</h1>
+        <p class="subtitle">El arte de reinventarse en tiempos de cambio</p>
+        <p class="author">Por Silvio Álvarez</p>
     </header>
 
-    <main>
-        <!-- Sección Principal / Banner -->
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <h1>TRANSMUTA TU VIDA: EL ARTE DE REINVENTARSE</h1>
-                <p>Guía práctica de resiliencia, gestión emocional y fortaleza mental para superar la adversidad., reprogramar tu mentalidad y convertir tus desafíos en grandes oportunidades.</p>
-                                <p>                <p>Guía práctica de resiliencia, gestión emocional y fortaleza mental para superar la adversidad., reprogramar tu mentalidad y convertir tus desafíos en grandes oportunidades.</p>
-</p>
+    <div class="price-box">
+        <div class="price-label">Precio de Lanzamiento</div>
+        <div class="price-value">$15.000 ARS</div>
+        <div class="price-desc">Entrega inmediata en PDF a tu WhatsApp</div>
+    </div>
 
-                <a href="#ebook" class="btn-primary">Ver E-book y Adquirir</a>
-            </div>
-        </section>
+    <a href="https://wa.me/5492921424704?text=%C2%A1Hola%20Silvio!%20Quiero%20comprar%20el%20e-book%20'Transmuta%20Tu%20Vida'.%20%C2%BFC%C3%B3mo%20realizo%20el%20pago?" 
+       class="btn-whatsapp" target="_blank" id="ws-link">
+        💬 Pedir por WhatsApp
+    </a>
 
-        <!-- Presentación del Libro -->
-        <section id="ebook" class="product-section">
-            <div class="product-card">
-                <div class="product-image">
-                    <div class="book-cover">
-                        <h3>TRANSFORMA TU VIDA</h3>
-                        <p class="subtitle">Guía Práctica de Resiliencia</p>
-                        <p class="author">Silvio Álvarez</p>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h2>E-book: Transforma Tu Vida</h2>
-                    <p class="description">
-                        Este libro te brindará herramientas claras para tomar el control de tu historia, romper patrones limitantes y construir una mentalidad inquebrantable ante los momentos difíciles.
-                    </p>
-                    <ul class="features">
-                        <li>✅ <strong>Formato digital:</strong> PDF y EPUB (Lectura en celular, tablet o PC)</li>
-                        <li>✅ <strong>Entrega inmediata:</strong> Envío directo a tu WhatsApp o correo</li>
-                        <li>✅ <strong>Guía práctica:</strong> Incluye ejercicios de reflexión al final de cada capítulo</li>
-                        <li>✅ <strong>Soporte directo:</strong> Atención personalizada vía WhatsApp</li>
-                    </ul>
-                    <div class="price-container">
-                        <span class="price-label">Precio promocional:</span>
-                        <span class="price">$15.000 ARS</span>
-                    </div>
-                    
-                    <!-- Botón directo a WhatsApp -->
-                    <button class="btn-buy" id="buy-whatsapp-btn" style="background-color: #25D366; color: white;">
-                        💬 Pedir por WhatsApp
-                    </button>
-                </div>
-            </div>
-        </section>
+    <h2 class="section-title">¿Qué vas a encontrar en esta obra?</h2>
+    <p style="font-size: 0.95rem; margin-bottom: 15px;">
+        Una guía profunda y práctica para atravesar momentos de incertidumbre, recuperar el control de tus emociones y construir un plan claro de reinvención personal.
+    </p>
 
-        <!-- Sobre el Autor -->
-        <section id="autor" class="author-section" style="max-width: 900px; margin: 3rem auto; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-            <h2 style="color: #2c3e50; margin-bottom: 1rem; text-align: center;">Sobre el Autor</h2>
-            <p style="line-height: 1.6; color: #555; text-align: center;">
-                <strong>Silvio Álvarez</strong> comparte en esta obra una visión humana, empática y reflexiva sobre los procesos de superación personal, invitando al lector a reelaborar sus vivencias y proyectar una vida con mayor sentido y plenitud.
-            </p>
-        </section>
-    </main>
+    <ul class="features">
+        <li><strong>6 Capítulos completos</strong> con herramientas de psicología y neurociencia aplicada.</li>
+        <li><strong>Cuadernos de trabajo</strong> y ejercicios prácticos por capítulo.</li>
+        <li><strong>Método N.A.V.E.</strong> para la autorregulación emocional.</li>
+        <li><strong>Matriz de Acción de 30 Días</strong> paso a paso.</li>
+    </ul>
+
+    <h2 class="section-title">Estructura del Libro</h2>
+
+    <div class="chapter-card">
+        <div class="chapter-title">Capítulo 1: La Anatomía de la Crisis</div>
+        <div class="chapter-desc">Aprende la diferencia entre aceptación activa y resignación. El inventario de control.</div>
+    </div>
+
+    <div class="chapter-card">
+        <div class="chapter-title">Capítulo 2: Arquitectura Mental</div>
+        <div class="chapter-desc">Desarma la autocrítica, las creencias limitantes y aplica el Protocolo ABCDE.</div>
+    </div>
+
+    <div class="chapter-card">
+        <div class="chapter-title">Capítulo 3: De Víctima a Autodeterminado</div>
+        <div class="chapter-desc">Pasa del rol pasivo al de protagonista. Reescritura de tu narrativa personal.</div>
+    </div>
+
+    <div class="chapter-card">
+        <div class="chapter-title">Capítulo 4: Inteligencia Emocional Práctica</div>
+        <div class="chapter-desc">Regla de los 90 segundos y el Método N.A.V.E. para procesar emociones intensas.</div>
+    </div>
+
+    <div class="chapter-card">
+        <div class="chapter-title">Capítulo 5: El Poder del Micro-Paso</div>
+        <div class="chapter-desc">Cómo vencer la parálisis por análisis, la procrastinación y generar impulso.</div>
+    </div>
+
+    <div class="chapter-card">
+        <div class="chapter-title">Capítulo 6: Entorno y Hábitos de Resiliencia</div>
+        <div class="chapter-desc">Diseño de espacio, dieta digital y los 4 anclajes biológicos del bienestar.</div>
+    </div>
+
+    <div class="chapter-card" style="border-left-color: var(--accent-color);">
+        <div class="chapter-title">Epílogo + Matriz de Acción de 30 Días</div>
+        <div class="chapter-desc">Tu hoja de ruta diaria durante un mes para consolidar el cambio.</div>
+    </div>
+
+    <div style="margin-top: 25px;">
+        <a href="https://wa.me/5491100000000?text=%C2%A1Hola%20Silvio!%20Quiero%20comprar%20el%20e-book%20'Transmuta%20Tu%20Vida'.%20%C2%BFC%C3%B3mo%20realizo%20el%20pago?" 
+           class="btn-whatsapp" target="_blank">
+            💬 Pedir por WhatsApp
+        </a>
+    </div>
 
     <footer>
-        <p>&copy; 2026 Silvio Álvarez. Todos los derechos reservados.</p>
+        © Silvio Álvarez — Todos los derechos reservados.<br>
+        Formato Digital PDF para descarga e impresión.
     </footer>
+</div>
 
-    <script src="script.js"></script>
+<script>
+    // Recordá reemplazar el número en los enlaces de arriba por tu WhatsApp real con código de país.
+    // Ejemplo: 5491112345678 (Sin el símbolo +)
+</script>
+
 </body>
 </html>
