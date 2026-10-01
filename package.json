@@ -1,0 +1,13 @@
+{
+  "name": "producto-digital",
+  "version": "1.0.0",
+  "description": "Tienda digital de e-books con pedido directo a WhatsApp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "license": "ISC"
+}

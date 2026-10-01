@@ -1,0 +1,17 @@
+const express = require('express');
+const path = require('path');
+
+const app = express();
+
+// Servir la carpeta public
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Importante: escuchar en process.env.PORT y '0.0.0.0' para Render
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Servidor iniciado correctamente en el puerto ${PORT}`);
+});
